@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div style="color:blue">
+        <form action="{{ url_for('predict')}}" method="post">
+            <h2>Predictive analysis</h2>
+            
+            <h3>WHat is your age?</h3>
+            <input id="age" name="age" type="number", placeholder="Enter your age">
+            
+            <h3>What is your Gender?</h3>
+            <select name="sex" id="sex" required="required", >
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+            
+            
+            <h3>Enter your Body-Mass-Index</h3>
+            <input id="bmi" name="bmi" type="number ">
+            
+            <h3>How many children do you have? (0-5)</h3>
+            <input id="children" name="children" type="number ", placeholder="Enter value between 0 to 5">
+            
+            <h3>Do you Smoke?</h3>
+            <select name="smoker" id="smoker" required="required", >
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+            
+            <h3>region (0-3)</h3>
+            <input id="region" name="region" type="number ">
+            
+            <h3>Enter amount of Insurance you want's to claime</h3>
+            <input id="charges" name="charges" type="number ">
+            
+            
+           
+            <br><br><button id="sub" type="submit ">Predict</button>
+            <br>
+
+        </form>
+
+
+
+        <br><br><h3>{{prediction_text}}<h3>
+    </div>
+    
+    <style>
+        body {
+            background-color: lightslategray;
+            text-align: center;
+            padding: 0px;
+        }
+        
+        #box {
+            border-radius: 60px;
+            border-color: 45px;
+            border-style: solid;
+            font-family: cursive;
+            text-align: center;
+            background-color: rgb(168, 131, 61);
+            font-size: medium;
+            position: absolute;
+            width: 700px;
+            bottom: 9%;
+            height: 850px;
+            right: 30%;
+            padding: 0px;
+            margin: 0px;
+            font-size: 14px;
+        }
+        
+        #sub {
+            width: 120px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #sub:hover {
+            background-color: darkcyan;
+        }
+
+
