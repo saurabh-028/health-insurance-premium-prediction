@@ -3,92 +3,90 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document 2</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
 </head>
 
 <body>
 
 
-    <div style="color:blue">
-        <form action="{{ url_for('predict')}}" method="post">
-            <h2>Predictive analysis</h2>
-            
-            <h3>WHat is your age?</h3>
-            <input id="age" name="age" type="number", placeholder="Enter your age">
-            
-            <h3>What is your Gender?</h3>
-            <select name="sex" id="sex" required="required", >
-              <option value="Male">Male</option>
-              <option value="Female">Female</option>
-            </select>
-            
-            
-            <h3>Enter your Body-Mass-Index</h3>
-            <input id="bmi" name="bmi" type="number ">
-            
-            <h3>How many children do you have? (0-5)</h3>
-            <input id="children" name="children" type="number ", placeholder="Enter value between 0 to 5">
-            
-            <h3>Do you Smoke?</h3>
-            <select name="smoker" id="smoker" required="required", >
-              <option value="Yes">Yes</option>
-              <option value="No">No</option>
-            </select>
-            
-            <h3>region (0-3)</h3>
-            <input id="region" name="region" type="number ">
-            
-            <h3>Enter amount of Insurance you want's to claime</h3>
-            <input id="charges" name="charges" type="number ">
-            
-            
-           
-            <br><br><button id="sub" type="submit ">Predict</button>
-            <br>
 
-        </form>
+    <section class="text_class-content ">
+        <div class="container ">
+            <div class="row   form_class_main">
+                <div class="col-lg-6">
 
 
+                    <form action="{{ url_for('predict')}}" method="post">
+                        <div class="row">
 
-        <br><br><h3>{{prediction_text}}<h3>
-    </div>
-    
-    <style>
-        body {
-            background-color: lightslategray;
-            text-align: center;
-            padding: 0px;
-        }
-        
-        #box {
-            border-radius: 60px;
-            border-color: 45px;
-            border-style: solid;
-            font-family: cursive;
-            text-align: center;
-            background-color: rgb(168, 131, 61);
-            font-size: medium;
-            position: absolute;
-            width: 700px;
-            bottom: 9%;
-            height: 850px;
-            right: 30%;
-            padding: 0px;
-            margin: 0px;
-            font-size: 14px;
-        }
-        
-        #sub {
-            width: 120px;
-            height: 43px;
-            text-align: center;
-            border-radius: 14px;
-            font-size: 18px;
-        }
-        
-        #sub:hover {
-            background-color: darkcyan;
-        }
+                            <div class="col-lg-6">
+                                <div class="mb-3">
+                                    <label for="exampleInputage1" class="form-label">What is your age?</label>
+                                    <input id="age" name="age" type="number" class="form-control" placeholder="Enter Your Age">
+
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+
+                                <div class="mb-3">
+                                    <label for="exampleInputgender" class="form-label">What is your Gender?</label>
+                                    <select name="sex" id="sex" required="required" class="form-select" aria-label="Default select example">
+                                        <option selected>Open this select menu</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="mb-3">
+                                    <label for="exampleInputindex" class="form-label">Enter your Body-Mass-Index</label>
+                                    <input id="bmi" name="bmi" type="number " class="form-control" placeholder="Enter Value">
+
+                                </div>
+
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="mb-3">
+                                    <label for="exampleInputindex" class="form-label">How many children do you have? (0-5)</label>
+                                    <input id="children" name="children" type="number " class="form-control" placeholder="Enter value between 0 to 5">
+
+                                </div>
+
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="mb-3">
+                                    <label for="exampleInputsmoke" class="form-label">Do you Smoke?</label>
+                                    <select name="smoker" id="smoker" required="required" class="form-select" aria-label="Default select example">
+                                        <option selected>Open this select menu</option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="mb-3">
+                                    <label for="exampleInputregion" class="form-label">Enter amount of Insurance you want's to claime</label>
+                                    <input iid="charges" name="charges" type="number " class="form-control" placeholder="Enter Amount ">
+
+                                </div>
+                            </div>
+                            <button id="sub" type="submit" class="btn btn-primary">Predict</button>
+                        </div>
+                    </form>
+                    <br><br>
+                    <h3>{{prediction_text}}</h3>
 
 
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
