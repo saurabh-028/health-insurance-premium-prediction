@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document 2</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+          body {
+
+                margin: 0;
+                padding: 0;
+                font-family: 'Poppins';
+
+                }
+
+                input {
+
+                border: 1px solid #ccc !important;
+
+                margin: 0 0 5px !important;
+                padding: 10px !important;
+
+                color: #88888C !important;
+                background-color: transparent !important;
+                }
+
+                input:hover {
+                -webkit-transition: border-color 0.3s ease-in-out !important;
+                -moz-transition: border-color 0.1s ease-in-out !important;
+                transition: border-color 0.1s ease-in-out !important;
+                border: 1px solid #c1c1c1 !important;
+                }
+
+                button[type="submit"] {
+                cursor: pointer;
+                width: 100%;
+                border: none;
+                border-radius: 5px;
+                background: #3a5b62;
+                color: #FFF;
+                margin: 0 0 5px;
+                padding: 15px;
+                font-size: 15px;
+                font-weight: 600;
+                }
+
+                button[type="submit"]:hover {
+                background: #fec903;
+                -webkit-transition: background 0.3s ease-in-out;
+                -moz-transition: background 0.3s ease-in-out;
+                transition: background-color 0.3s ease-in-out;
+                }
+
+                button[type="submit"]:active {
+                box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+                }
+
+                .copyright {
+                text-align: center;
+                }
+
+                input::focus {
+                outline: none !important;
+                border: 1px solid #aaa !important;
+                }
+
+                ::-webkit-input-placeholder {
+                color: #888;
+                }
+
+                :-moz-placeholder {
+                color: #888;
+                }
+
+                ::-moz-placeholder {
+                color: #888;
+                }
+
+                :-ms-input-placeholder {
+                color: #888;
+                }
+
+                .form_class_main {
+
+                padding: 20px;
+                }
+
+
+                .text_class-content {
+                margin-top: 60px;
+                }
+
+                .form-label {
+                margin-bottom: 0.5rem;
+                font-size: 15px !important;
+                }
+
+
+                .form-select {
+
+                padding: 0.375rem 2.25rem 1rem 0.75rem !important;
+
+                }
+
+    </style>
+</head>
+
+<body>
+
+
+
+    <section class="text_class-content ">
+        <div class="container ">
+            <div class="row   form_class_main">
+                <div class="col-lg-6">
+                    <h2 class="mb-5">Health Insurance</h2>
+
+
+                    <form action="{{ url_for('predict')}}" method="post">
+                        <div class="row">
+
+                            <div class="col-lg-6">
+                                <div class="mb-3">
+                                    <label for="exampleInputage1" class="form-label">What is your age?</label>
+                                    <input id="age" name="age" type="number" class="form-control" placeholder="Enter Your Age">
+
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+
+                                <div class="mb-3">
+                                    <label for="exampleInputgender" class="form-label">What is your Gender?</label>
+                                    <select name="sex" id="sex" required="required" class="form-select" aria-label="Default select example">
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="mb-3">
+                                    <label for="exampleInputindex" class="form-label">Enter your Body-Mass-Index</label>
+                                    <input id="bmi" name="bmi" type="number " class="form-control" placeholder="Enter Value">
+
+                                </div>
+
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="mb-3">
+                                    <label for="exampleInputindex" class="form-label">How many children do you have? (0-5)</label>
+                                    <input id="children" name="children" type="number " class="form-control" placeholder="Enter value between 0 to 5">
+
+                                </div>
+
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="mb-3">
+                                    <label for="exampleInputindex" class="form-label">Enter Region? (0-3)</label>
+                                    <input id="region" name="region" type="number " class="form-control" placeholder="Enter value between 0 to 3">
+
+                                </div>
+
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="mb-3">
+                                    <label for="exampleInputsmoke" class="form-label">Do you Smoke?</label>
+                                    <select name="smoker" id="smoker" required="required" class="form-select" aria-label="Default select example">
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="mb-3">
+                                    <label for="exampleInputregion" class="form-label">Enter amount of Insurance you want's to claime</label>
+                                    <input id="charges" name="charges" type="number " class="form-control" placeholder="Enter Amount ">
+
+                                </div>
+                            </div>
+                            <button id="sub" type="submit" class="btn btn-primary">Predict</button>
+                        </div>
+                    </form>
+                    <br><br>
+                    <h3>{{prediction_text}}</h3>
+
+
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://img.freepik.com/free-vector/insurance-concept-illustration_114360-4352.jpg?t=st=1647623704~exp=1647624304~hmac=1f024a3ae5a5fbd1e30ebe90c3f0d65d572c6920fc86c8e178a2af368fb75c61&w=740" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
