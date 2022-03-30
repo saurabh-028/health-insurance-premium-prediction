@@ -11,9 +11,11 @@ Using this webapp you can check if you are eligible to claim a health insurance 
 ![Screenshot (154)](https://user-images.githubusercontent.com/80406834/160918046-baeb4e93-d0d4-4d49-bc8d-e66f812128de.png)
 
 After Insertig the values, press predict button. 
-# Here is the prediction
+# Here is the prediction.
 ![Screenshot (155)_LI](https://user-images.githubusercontent.com/80406834/160918629-b90bb8fb-fa73-4b18-b546-a3645859112e.jpg)
 
+# Here is another scenario when a person cannot claim an insurance.
+![Screenshot (156)](https://user-images.githubusercontent.com/80406834/160920354-c1601d21-c074-4c59-bcc8-878d53b2af84.png)
 
 
 
