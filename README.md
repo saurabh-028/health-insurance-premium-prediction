@@ -4,7 +4,7 @@ Using this webapp you can check if you are eligible to claim a health insurance 
 
 # Screenshots of Project
 
-# Home page of project
+<!-- # Home page of project
 ![Screenshot (607)](https://user-images.githubusercontent.com/40494619/155872550-e7db11d2-b152-4a14-810d-f8c714a4a6b9.png)
 # Home page containing Information about Disease
 ![Screenshot (608)](https://user-images.githubusercontent.com/40494619/155872561-6f15a2c6-f92f-4eb7-a0ab-a8ee3f7cc521.png)
@@ -84,3 +84,4 @@ All the datasets were used from kaggle can be found in below link also images of
 
 https://www.kaggle.com/iarunava/cell-images-for-detecting-malaria
 
+ -->
