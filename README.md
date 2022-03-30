@@ -7,6 +7,16 @@ Using this webapp you can check if you are eligible to claim a health insurance 
 # Home page 
 ![Screenshot (153)](https://user-images.githubusercontent.com/80406834/160917335-eedea09a-c629-461c-967f-d7c6af792d63.png)
 
+# Inserting Values
+![Screenshot (154)](https://user-images.githubusercontent.com/80406834/160918046-baeb4e93-d0d4-4d49-bc8d-e66f812128de.png)
+
+After Insertig the values, press predict button. 
+# Here is the prediction
+![Screenshot (155)_LI](https://user-images.githubusercontent.com/80406834/160918629-b90bb8fb-fa73-4b18-b546-a3645859112e.jpg)
+
+
+
+
 <!-- # Home page of project
 ![Screenshot (607)](https://user-images.githubusercontent.com/40494619/155872550-e7db11d2-b152-4a14-810d-f8c714a4a6b9.png)
 # Home page containing Information about Disease
