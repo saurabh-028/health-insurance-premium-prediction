@@ -3,6 +3,8 @@ Using this webapp you can check if you are eligible to claim a health insurance 
 (hosted at miscrosft Azure) : https://healthinsurance.azurewebsites.net/
 
 # Screenshots of Project
+
+# Home page 
 ![Screenshot (153)](https://user-images.githubusercontent.com/80406834/160917335-eedea09a-c629-461c-967f-d7c6af792d63.png)
 
 <!-- # Home page of project
