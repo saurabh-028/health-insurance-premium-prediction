@@ -49,14 +49,15 @@ Confusion Matrix: <br>
  [[ 67  38]<br>
  [ 25 138]]<br>
 Classification report: <br>
-               precision    recall  f1-score   support
-
-           0       0.64      0.73      0.68        92
-           1       0.85      0.78      0.81       176
-
-    accuracy                           0.76       268
-   macro avg       0.74      0.76      0.75       268
-weighted avg       0.78      0.76      0.77       268
+               
+|               |precision|    recall|  f1-score |  support|
+|
+|          0    |    0.64      0.73      0.68        92
+|           1   |    0.85      0.78      0.81       176
+|
+|    accuracy   |                        0.76       268
+|   macro avg   |   0.74      0.76      0.75       268
+|weighted avg   |    0.78      0.76      0.77       268
 
 ### DecisionTreeClassifier
 Accuracy Score:  0.9589552238805971
