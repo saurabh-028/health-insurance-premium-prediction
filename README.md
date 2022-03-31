@@ -34,8 +34,119 @@ This webapp was developed using Flask Web Framework and was deployed on microsof
 
 All the datasets were used from kaggle can be found in below link also images of samples.
 
-https://www.kaggle.com/iarunava/cell-images-for-detecting-malaria
+https://www.kaggle.com/datasets/mirichoi0218/insurance
 
+# Video of Project
+
+https://user-images.githubusercontent.com/80406834/161100094-6bdf1907-13ae-4066-b7ed-1bd9ad1d4b01.mp4
+
+## Models with their Accuracy of Prediction
+
+### 1. LogisticRegression
+
+Accuracy Score:  0.7649253731343284
+Confusion Matrix: 
+ [[ 67  38]
+ [ 25 138]]
+Classification report: 
+               precision    recall  f1-score   support
+
+           0       0.64      0.73      0.68        92
+           1       0.85      0.78      0.81       176
+
+    accuracy                           0.76       268
+   macro avg       0.74      0.76      0.75       268
+weighted avg       0.78      0.76      0.77       268
+
+### DecisionTreeClassifier
+Accuracy Score:  0.9589552238805971
+Confusion Matrix: 
+ [[ 99   6]
+ [  5 158]]
+Classification report: 
+               precision    recall  f1-score   support
+
+           0       0.94      0.95      0.95       104
+           1       0.97      0.96      0.97       164
+
+    accuracy                           0.96       268
+   macro avg       0.96      0.96      0.96       268
+weighted avg       0.96      0.96      0.96       268
+
+### GaussianNB
+Accuracy Score:  0.7910447761194029
+Confusion Matrix: 
+ [[ 97   8]
+ [ 48 115]]
+Classification report: 
+               precision    recall  f1-score   support
+
+           0       0.92      0.67      0.78       145
+           1       0.71      0.93      0.80       123
+
+    accuracy                           0.79       268
+   macro avg       0.81      0.80      0.79       268
+weighted avg       0.82      0.79      0.79       268
+
+### RandomForestClassifier
+Accuracy Score:  0.9514925373134329
+Confusion Matrix: 
+ [[102   3]
+ [ 10 153]]
+Classification report: 
+               precision    recall  f1-score   support
+
+           0       0.97      0.91      0.94       112
+           1       0.94      0.98      0.96       156
+
+    accuracy                           0.95       268
+   macro avg       0.96      0.95      0.95       268
+weighted avg       0.95      0.95      0.95       268
+
+### SVC
+Accuracy Score:  0.6417910447761194
+Confusion Matrix: 
+ [[80 25]
+ [71 92]]
+Classification report: 
+               precision    recall  f1-score   support
+
+           0       0.76      0.53      0.62       151
+           1       0.56      0.79      0.66       117
+
+    accuracy                           0.64       268
+   macro avg       0.66      0.66      0.64       268
+weighted avg       0.68      0.64      0.64       268
+
+### AdaBoostClassifier
+Accuracy Score:  0.8432835820895522
+Confusion Matrix: 
+ [[ 85  20]
+ [ 22 141]]
+Classification report: 
+               precision    recall  f1-score   support
+
+           0       0.81      0.79      0.80       107
+           1       0.87      0.88      0.87       161
+
+    accuracy                           0.84       268
+   macro avg       0.84      0.84      0.84       268
+weighted avg       0.84      0.84      0.84       268
+
+### GradientBoostingClassifier
+Accuracy Score:  0.9701492537313433
+Confusion Matrix: 
+ [[102   3]
+ [  5 158]]
+Classification report: 
+               precision    recall  f1-score   support
+
+           0       0.97      0.95      0.96       107
+           1       0.97      0.98      0.98       161
+
+    accuracy                           0.97       268
+   macro avg       0.97      0.97      0.97       268
+weighted avg       0.97      0.97      0.97       268
 
 <!-- # Home page of project
 ![Screenshot (607)](https://user-images.githubusercontent.com/40494619/155872550-e7db11d2-b152-4a14-810d-f8c714a4a6b9.png)
