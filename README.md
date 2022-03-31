@@ -44,11 +44,11 @@ https://user-images.githubusercontent.com/80406834/161100094-6bdf1907-13ae-4066-
 
 ### 1. LogisticRegression
 
-Accuracy Score:  0.7649253731343284
-Confusion Matrix: 
- [[ 67  38]
- [ 25 138]]
-Classification report: 
+Accuracy Score:  0.7649253731343284<br>
+Confusion Matrix: <br>
+ [[ 67  38]<br>
+ [ 25 138]]<br>
+Classification report: <br>
                precision    recall  f1-score   support
 
            0       0.64      0.73      0.68        92
