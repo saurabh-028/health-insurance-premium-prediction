@@ -1,6 +1,6 @@
 ## Predicting weather a person can claim health insurance or not using machine learning.
 
-This is a web pp where you can check your eligiblity to claim health insurance. This is a machine learning model deployed into web app so that anyone can use it.<br>
+This is a web app where you can check your eligiblity to claim health insurance. This is a machine learning model deployed into web app so that anyone can use it.<br>
 (hosted at miscrosft Azure) : https://healthinsurance.azurewebsites.net/
 
 # Screenshots of Project
